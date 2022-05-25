@@ -1,0 +1,147 @@
+.news {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @include onTablet {
+    padding: 0 39px;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  @include onDesktop {
+    padding: 0 45px;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: top;
+  }
+
+  &__image {
+    &-2 {
+      background-image: url(../images/img_09.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 280px;
+      width: 280px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+
+      @include onTablet {
+        background-image: url(../images/img_09.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        height: 330px;
+        width: 330px;
+      }
+
+      @include onDesktop {
+        background-image: url(../images/img_09_desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        height: 370px;
+        width: 570px;
+      }
+
+      &:hover {
+        @include onTablet {
+          overflow: hidden;
+          transform: scale(1.03);
+          box-shadow: 0 13px 27px rgba(51, 50, 50, 1);
+        }
+
+        @include onDesktop {
+          overflow: hidden;
+          transform: scale(1.03);
+          box-shadow: 0 13px 27px rgba(51, 50, 50, 1);
+        }
+      }
+    }
+
+    &-1 {
+      background-image: url(../images/img_08.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 280px;
+      width: 280px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+
+      @include onTablet {
+        background-image: url(../images/img_08.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        height: 330px;
+        width: 330px;
+      }
+
+      @include onDesktop {
+        background-image: url(../images/img_08_desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        margin-bottom: 20px;
+        height: 370px;
+        width: 570px;
+      }
+
+      &:hover {
+        @include onTablet {
+          overflow: hidden;
+          transform: scale(1.03);
+          box-shadow: 0 13px 27px rgba(51, 50, 50, 1);
+        }
+
+        @include onDesktop {
+          overflow: hidden;
+          transform: scale(1.03);
+          box-shadow: 0 13px 27px rgba(51, 50, 50, 1);
+        }
+      }
+    }
+
+  }
+
+  &__time {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1C1B29;
+    height: 20px;
+  }
+
+  &__sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    margin-bottom: 20px;
+    color: #1c1b29;
+
+    @include onTablet {
+      margin-bottom: 18px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__text {
+    @include fontRalewayBig;
+    color: #504F5E;
+    width: 100%;
+    display: block;
+    max-width: 570px;
+    margin: 0;
+
+    &-spec {
+      margin-bottom: 30px;
+    }
+  }
+}

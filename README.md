@@ -1,4 +1,5 @@
-# Base layout template with Gulp, SCSS and Stylelint
-1. Create a repo using this template
-1. Replace `<your_account>` and `<repo_name>` with your Github username and the new repo name
-    - [DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+This project is a landing page for NAMU(National Art Museum of Ukraine).
+
+Technologies used: HTML5, CSS3, SASS, BEM, JavaScript, JavaScript DOM
+
+- [DEMO LINK](https://Danylo-Dziuban.github.io/NAMU-landing/)
